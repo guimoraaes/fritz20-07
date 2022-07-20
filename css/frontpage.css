@@ -1,0 +1,639 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: proxima-nova, sans-serif;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+.lottie-bg {
+    background: none;
+    position: absolute;
+    z-index: -1;
+    width:100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* header-primario */
+
+
+.logo {
+    margin: 0;
+    margin-top: 0rem;
+    margin-left: 10rem;
+    width: 26%;
+}
+
+.header-primario {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.nav-primaria {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 10rem;
+}
+
+.nav-primaria a {
+    text-decoration: none;
+    color: #282012;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/*--------------------------ANIMATIONS--------------------------*/
+
+.bubble {
+    position: absolute;
+    margin: 0;
+    z-index: 0;
+    top: 9rem;
+    left: 4rem;
+    width: 50%;
+}
+
+.delivery {
+    margin: 0;
+    width: 50%;
+}
+
+.planos {
+    margin: 0;
+    padding-top: 8rem;
+    z-index: 2;
+    width: 43%;
+}
+
+/*--------------------------BOTÃO WHATS--------------------------*/
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/*--------------------------MAIN--------------------------*/
+
+.main-grid {
+    display: grid;
+    gap: 15rem;
+    grid-template-columns: 1fr;
+}
+
+/*--------------------------CHAMADA--------------------------*/
+
+.chamada-texto {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 800;
+    font-size: 400%;
+    position: absolute;
+    right: 6rem;
+    top: 18rem;
+    z-index: 1;
+}
+
+.chamada-texto-fritz {
+    color: #FFCC1D;
+}
+
+.initial-animations {
+    display: flex;
+    flex-direction: column;
+}
+
+/*--------------------------COMO FUNCIONA--------------------------*/
+
+.card-button2 {
+    padding: 0.6rem 3rem;
+    border: 2px solid #FFCC1D;
+    background-color: white;
+    color:#FFCC1D;
+    border-radius: 30px;
+    font-weight: 800;
+}
+
+
+.como-funciona-fritz{
+    color: #FFCC1D;
+}
+
+.como-funciona-article {
+    text-align: center;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.25), 0 2px 5px rgba(0, 0, 0, 0.22);
+    height: auto;
+}
+
+.como-funciona-texto {
+    padding-top: 1rem;
+    line-height: 4rem;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 800;
+    font-size: 330%;
+    z-index: 1;
+}
+
+.como-funciona {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.como-funciona-texto-linha {
+    line-height: 4rem;
+}
+
+.etapas {
+    display: grid;
+    font-size: larger;
+    grid-template-columns: 1fr;
+    width: 18.75%;
+}
+
+.icones-etapas {
+    width: 40%;
+    margin: auto;
+}
+
+.icones-etapas-dif {
+    width: 35%;
+    margin: auto;
+    margin-top: 1.2rem;
+}
+
+.texto-etapas {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.texto-etapas-normal {
+    font-weight: 500;
+}
+
+/*--------------------------PLANOS--------------------------*/
+
+.planos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+    padding: 2rem;
+    margin: 1rem;
+    transition: all 0.2s ease-in;
+}
+
+.card-wrapper:hover {
+    transform: scale(1.1);
+}
+
+.card-header {
+    margin: 1rem;
+    text-align: center;
+}
+
+.card-wrapper:hover .card-header> h2 {
+    transform: scale(1.1);
+    color: #116530;
+    letter-spacing: 2;
+    transition: all 50ms ease-in;
+}
+
+.card-header > lottie-interactive {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-detail > p {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #ffffff;
+}
+
+.check {
+    color: #116530;
+}
+
+.card-price {
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem;
+}
+
+.card-price > p {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.card-price > p sup,
+.card-price > p sub {
+    font-size: 1rem;
+}
+
+.card-button {
+    padding: 0.6rem 3rem;
+    border: 2px solid #116530;
+    background-color: #116530;
+    color: #ffffff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 50ms ease-in;
+}
+
+.card-button:hover {
+    border: 2px solid #FFCC1D;
+    background-color: transparent;
+    color:#FFCC1D;
+    font-weight: 800;
+}
+
+
+/*--------------------------FOOTER--------------------------*/
+
+footer {
+    background: #212529;
+    color: #fcfce5;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -300%;
+    font-weight: 700;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+
+.socials-icons {
+    padding-left: 1rem;
+    color: #E2DF21;
+}
+
+/*////////////////////////////////////////*/
+
+/*1366x768px*/
+@media (max-width: 86rem) {
+    .implante-o {
+        position: absolute;
+        z-index: 3;
+        
+        font-size: 3rem;
+        font-weight: 700;
+    
+        margin: 0;
+        left: 45.5rem;
+        top: 21rem;
+    }
+    
+    .fritz-noseunegocio {
+        display: flex;
+        flex-direction: row;
+        font-size: 4rem;
+        font-weight: 700;
+        position: absolute;
+        z-index: 3;
+        
+        font-size: 3rem;
+        font-weight: 700;
+    
+        margin: 0;
+        left: 53rem;
+        top: 24.5rem;
+    }
+    
+    .fritz {
+        color: #E2DF21;
+        position: absolute;
+        z-index: 3;
+        
+        font-size: 3rem;
+        font-weight: 700;
+    
+        margin: 0;
+        right: 23.3rem;
+    }
+    
+    .button-plans {
+        z-index: 4;
+        width: 55%;
+        position: absolute;
+        top: 4.5rem;
+        right: 17.77rem;
+    }
+
+    footer {
+        background: #212529;
+        color: #fcfce5;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -147rem;
+        font-weight: 700;
+    }
+    
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        align-items: center;
+    }
+    
+    .socials {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 0;
+    }
+    
+    .socials-icons {
+        padding-left: 1rem;
+        color: #E2DF21;
+    }
+
+    .entre-contato-footer {
+        font-size: 4rem;
+        padding-left: 10rem;
+    }
+
+    .redes-sociais-footer {
+        font-size: 3rem;
+        padding-left: 17.5rem;
+    }
+}
+
+/*mobile*/
+@media (max-width: 65rem) {
+    .nav-primaria {
+
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 30%;
+
+        flex-direction: column;
+        padding: min(15vh, 15rem) 4em;
+        
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+
+        background-color: hsl(0 0% 0% / 0.75);
+        backdrop-filter: blur(40px);
+
+        margin:0;
+
+        font-weight: 500;
+    }
+
+    .nav-primaria a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 3.7rem;
+        font-weight: 700;
+    }
+
+    .hamburguer {
+        position: fixed;
+    }
+
+    .delivery {
+        position: absolute;
+        margin: 0;
+        z-index: 2;
+        top: 28rem;
+        left: 1rem;
+        width: 90%;
+    }
+
+    .bubble {
+        position: absolute;
+        margin: 0;
+        z-index: 1;
+        top: 25rem;
+        left: 2rem;
+        width: 90%;
+    }
+
+    .business {
+        position: absolute;
+        margin: 0;
+        z-index: 2;
+        top: 110rem;
+        left: 5rem;
+        width: 70%;
+    }
+    
+    @supports (backdrop-filter: blur(40px)) {
+        .nav-primaria {
+            background-color: hsl(0 0% 100% / 0.01);
+            backdrop-filter: blur(70px);
+        }
+
+        .nav-primaria a {
+        text-decoration: none;
+        color: #282012;
+        font-size: 3.7rem;
+        font-weight: 700;
+        }
+    }
+
+    .nav-primaria[data-visible = "true"] {
+        transform: translateX(0%);
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        width: 3rem;
+        background: none;
+        background-repeat: no-repeat;
+        aspect-ratio: 1;
+        border: 0;
+        top: 2rem;
+        right: 2rem;
+    }
+    
+    .logo {
+        margin-top: 2rem;
+        margin-left: 3rem;
+        width: 14em;
+    }
+
+    .hamburguer {
+        width: 130%;
+        position: absolute;
+        margin: 0;
+        right: 2rem;
+        top: 2rem;
+    }
+
+    .implante-o {
+        position: absolute;
+        z-index: 3;
+        
+        font-size: 5rem;
+        font-weight: 700;
+    
+        margin: 0;
+        left: 5.9rem;
+        top: 80rem;
+    }
+    
+    .fritz-noseunegocio {
+        display: flex;
+        flex-direction: row;
+        font-size: 4rem;
+        font-weight: 700;
+        position: absolute;
+        z-index: 3;
+        
+        font-size: 5rem;
+        font-weight: 700;
+    
+        margin: 0;
+        left: 18rem;
+        top: 86rem;
+    }
+    
+    .fritz {
+        color: #E2DF21;
+        position: absolute;
+        z-index: 3;
+        
+        font-size: 5rem;
+        font-weight: 700;
+    
+        margin: 0;
+        left: -12.2rem;
+        top: 10;
+    }
+    
+    .button-plans {
+        z-index: 4;
+        width: 80%;
+        position: absolute;
+        top: 8rem;
+        right: 20.15rem;
+    }
+
+    .float{
+        position:fixed;
+        width:14rem;
+        height:14rem;
+        bottom:3rem;
+        left:3rem;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:7rem;
+        text-align:center;
+        font-size:7rem;
+        box-shadow: 2px 2px 15px rgb(77, 77, 77);
+        z-index:100;
+    }
+    
+    .my-float{
+        margin-top: 3.4rem;
+    }
+
+    footer {
+        background: #212529;
+        color: #fcfce5;
+        position: relative;
+        right: 0;
+        left: 0;
+        bottom: -300rem;
+        font-weight: 700;
+        height: 20rem;
+    }
+    
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        align-items: center;
+    }
+    
+    .socials {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 0;
+        size: 200%;
+    }
+    
+    .socials-icons {
+        padding-left: 4rem;
+        color: #E2DF21;
+    }
+
+    .entre-contato-footer {
+        font-size: 4rem;
+        padding-left: 10rem;
+    }
+
+    .redes-sociais-footer {
+        font-size: 3rem;
+        padding-left: 17.5rem;
+    }
+}
+
+
+
+
+/* geral */
+
+.flex {
+    display: flex;
+    gap: var(--gap,3rem)
+}

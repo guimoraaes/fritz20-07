@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Fritz Delivery</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/frontpage.css">
+    <link rel="stylesheet" href="css/widgets.css">
+    <link rel="icon" type="image/svg" href="img/logo-fritz.svg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/qff8ypv.css">
+
+</head>
+
+<body>
+    <div class="lottie-bg">
+        <lottie-interactive id="lottie-bg" path="animations/bubbles.json" autoplay style="left:0; right:0; position:absolute" loop></lottie-interactive>
+    </div>
+    
+    <!--HEADER-->
+
+    <header class="header-primario flex">
+        <div>
+            <img class="logo" src="img/logo-fritz.svg">
+        </div>
+
+        <button class="mobile-nav-toggle" aria-controls="nav-primaria" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <lottie-interactive class="hamburguer" path="animations/hamb03.json" interaction="switch"></lottie-interactive>
+        </button>
+
+        <nav>
+            <ul id="nav-primaria" data-visible="false" class="nav-primaria flex">
+                <!-- Inicio -->
+                <li class="active">
+                    <a href="index.html">
+                        <lottie-interactive path="#" interaction="click"></lottie-interactive><!-- //////Lottie Inativo////// -->
+                        Início
+                    </a>
+                </li>
+                <!-- Como Funciona -->
+                <li class="limaior">
+                    <a href="#como-funciona">
+                        <lottie-interactive path="#" interaction="morph"></lottie-interactive><!-- //////Lottie Inativo////// -->
+                        Como Funciona
+                    </a>
+                </li>
+                <!-- Serviços -->
+                <li>
+                    <a href="#planos">
+                        <lottie-interactive path="#" interaction="morph"></lottie-interactive><!-- //////Lottie Inativo////// -->
+                        Serviços
+                    </a>
+                </li>
+                <!-- Licencie-se -->
+                <li class="limaior2">
+                    <a href="franqueado.html">
+                        <lottie-interactive path="franqueado.html" interaction="morph"></lottie-interactive><!-- //////Lottie Inativo////// -->
+                        Seja um Franqueado
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!--PÁGINA INICIAL-->
+
+    <main class="main-grid">
+
+        <!--CHAMADA-->
+
+        <article>
+            <section class="initial-animations">
+                <div>
+                    <lottie-interactive class="bubble" path="animations/bubble.json" autoplay loop></lottie-interactive>
+                </div>
+                <div>
+                    <lottie-interactive class="delivery" path="animations/deliverytest2.json" autoplay loop></lottie-interactive>
+                </div>
+            </section>
+            <section>
+                <div class="chamada">
+                    <h2 class="chamada-texto">Implante também <br> o <span class="chamada-texto-fritz">Fritz</span> no seu negócio!</h2>
+                </div>
+            </section>
+         </article>
+
+         <!--COMO FUNCIONA-->
+
+        <article class="como-funciona-article">
+            <section>
+                <!--Acelera o processo com uma única ferramenta-->
+                <!--Como?-->
+                <p class="como-funciona-texto">Por que o <span class="como-funciona-fritz">Fritz</span>?</p>
+            </section>
+            <section class="como-funciona">
+                <div class="etapas">
+                    <!--mensalidade-->
+                    <lottie-interactive class="icones-etapas-dif" path="animations/icone-assinatura.json" autoplay loop></lottie-interactive>
+                    <p class="texto-etapas">Apenas uma assinatura mensal <br> <span class="texto-etapas-normal">Cancele quando quiser!</span></p>
+                </div>
+                <div class="etapas">
+                    <!--cadastro-->
+                    <lottie-interactive class="icones-etapas" path="animations/icone-cadastre.json" autoplay loop></lottie-interactive>
+                    <p class="texto-etapas">Cadastre seus produtos no sistema <br> <span class="texto-etapas-normal">Tudo do seu jeito!</span></p>
+                </div>
+                <div class="etapas">
+                    <!--divulga-->
+                    <lottie-interactive class="icones-etapas" path="animations/icone-divulgue.json" autoplay loop></lottie-interactive>
+                    <p class="texto-etapas">Divulgue aos seus clientes <br> <span class="texto-etapas-normal">Mostre as facilidades do seu negócio!</span></p>
+                </div>
+                <div class="etapas">
+                    <!--seu cliente faz os pedidos-->
+                    <lottie-interactive class="icones-etapas" path="animations/icone-pedidos.json" autoplay loop></lottie-interactive>
+                    <p class="texto-etapas">Seu cliente faz os pedidos pelo Fritz <br> <span class="texto-etapas-normal">Sem nenhuma taxa de comissão!</span></p>
+                </div>
+            </section>
+            <section>
+                <p class="como-funciona-texto"><br> Quer saber <span class="chamada-texto-fritz">mesmo  </span> como funciona?</p>
+                <p class="texto-etapas"> Descubra com esta demostração! <br> <button class="card-button2">DEMOSTRAÇÃO</button> <br> <span class="texto-etapas-normal">Sem mistérios.</span></p>
+            </section>
+        </article>
+
+        <!--PLANOS-->
+
+        <article>
+            <section class="planos">
+                <!--Plano Sistema Fritz-->
+                <div class="card-wrapper">
+
+                    <div class="card-header">
+                        <lottie-interactive class="plano-1"></lottie-interactive>
+                        <h2>SISTEMA FRITZ</h2>
+                    </div>
+
+                    <div class="card-detail">
+                        <p><span class="fa fa-check check"></span> Zero comissão!</p>
+                        <p><span class="fa fa-check check"></span> Suporte local ou via Whatsapp.</p>
+                        <p><span class="fa fa-check check"></span> Subdomínio exclusivo.</p>
+                        <p><span class="fa fa-check check"></span> Sem multa contratual.</p>
+                    </div>
+
+                    <div class="card-price">
+                        <p><sup>R$</sup>149,90<sub>/mês</sub></p>
+                    </div>
+
+                    <button class="card-button">ASSINE</button>
+                </div>
+                <!--Plano Landing Page-->
+                <div class="card-wrapper">
+
+                    <div class="card-header">
+                        <lottie-interactive class="plano-2"></lottie-interactive>
+                        <h2>LANDING PAGE</h2>
+                    </div>
+
+                    <div class="card-detail">
+                        <p><span class="fa fa-check check"></span> Página exclusiva!</p>
+                        <p><span class="fa fa-check check"></span> Suporte local ou via Whatsapp.</p>
+                        <p><span class="fa fa-check check"></span> 3 meses de hospedagem inclusos.</p>
+                        <p><span class="fa fa-check check"></span> Personalize conforme sua necessidade!.</p>
+                    </div>
+
+                    <div class="card-price">
+                        <p>R$149,90<sub>/mês x12 <br>ou R$1499,90 à vista</sub></p>
+                    </div>
+
+                    <button class="card-button">ASSINE</button>
+                </div>
+                <!--Plano E-Commerce-->
+                <div class="card-wrapper">
+
+                    <div class="card-header">
+                        <lottie-interactive class="plano-3"></lottie-interactive>
+                        <h2>E-Commerce</h2>
+                    </div>
+
+                    <div class="card-detail">
+                        <p><span class="fa fa-check check"></span> Página costumizada!</p>
+                        <p><span class="fa fa-check check"></span> Domínio exclusivo.</p>
+                        <p><span class="fa fa-check check"></span> Chat online.</p>
+                        <p><span class="fa fa-check check"></span> Personalize conforme sua necessidade!.</p>
+                    </div>
+
+                    <div class="card-price">
+                        <p>R$249,90<sub>/mês x12 <br>ou R$2499,90 à vista</sub></p>
+                    </div>
+
+                    <button class="card-button">ASSINE</button>
+                </div>
+            </section>
+        </article>
+
+        <!--BOTÃO WHATS-->
+
+        <section>
+            <a href="https://contate.me/testefritz" class="float" target="_blank">
+                <i class="fa fa-whatsapp my-float"></i>
+            </a>
+        </section>
+
+
+    </main>
+
+    <!--FOOTER-->
+
+    <footer>
+        <div class="footer-content">
+            <h3 class="entre-contato-footer"style="font-weight: 700;">Entre em contato</h3>
+            <p class="redes-sociais-footer">Acesse nossas redes sociais!</p>
+            <ul class="socials">
+                <li class="socials-icons"><a href="https://www.facebook.com/fritzdeliveryoficial?_rdc=1&_rdr"><i id="fb-fa"class="fa fa-facebook fa-2x" style="color:#E2DF21"></i></a></li>
+                <li class="socials-icons"><a href="https://www.instagram.com/fritzdeliveryoficial/"><i class="fa fa-instagram fa-2x" style="color:#E2DF21"></i></a></li>
+                <li class="socials-icons"><a href="#"><i class="fa fa-youtube fa-2x" style="color:#E2DF21"></i></a></li>
+                <li class="socials-icons"><a href="href=mailto:gui_moraes@live.com"><i class="fa fa-envelope fa-2x" style="color:#E2DF21"></i></a></li>
+            </ul>
+            <p>ⒸCOPYRIGHT FRITZ DELIVERY - 2022</p>
+        </div>
+    </footer>
+<!--Scripts-->
+    <script src="js/nav.js" defer></script>
+<!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap/bootstrap.bundle.js"></script>
+
+<!-- Lottie libraries -->
+    <script type="text/javascript" src="https://unpkg.com/lottie-interactive@latest/dist/lottie-interactive.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+
+<!-- Our interactivity code -->
+    <script type="text/javascript" src="js/interactions.js"></script>
+
+</body>
+</html>
